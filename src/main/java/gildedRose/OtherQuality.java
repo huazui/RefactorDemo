@@ -14,4 +14,7 @@ public class OtherQuality extends SetQuality {
         }
         return quality;
     }
+    public int updateSellIn(int sellIn){
+        return sellIn-1;
+    }
 }

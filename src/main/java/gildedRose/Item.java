@@ -35,7 +35,7 @@ public class Item {
     public void myUpdateQuality(){
         this.setSetQuality();
          this.quality = setQuality.updateQuality(this.quality,this.sellIn);
-
+         this.sellIn = setQuality.updateSellIn(this.sellIn);
     }
 
 

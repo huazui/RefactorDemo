@@ -22,4 +22,7 @@ public class BackstageQuality extends SetQuality {
         sellIn = sellIn - 1;
         return quality;
     }
+    public int updateSellIn(int sellIn){
+        return sellIn-1;
+    }
 }

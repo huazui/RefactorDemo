@@ -9,4 +9,8 @@ public class SulfurasQuality extends SetQuality {
     public int updateQuality(int quality, int sellIn){
        return quality;
     }
+    @Override
+    public int updateSellIn(int sellIn){
+        return sellIn;
+    }
 }

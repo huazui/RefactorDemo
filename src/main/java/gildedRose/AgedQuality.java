@@ -15,4 +15,7 @@ public class AgedQuality extends SetQuality {
             quality = quality + 1;
         return quality;
     }
+    public int updateSellIn(int sellIn){
+        return sellIn - 1;
+    }
 }

@@ -7,4 +7,5 @@ public abstract class SetQuality {
         return name;
     }
     public abstract int updateQuality(int quality, int sellIn);
+    public abstract int updateSellIn(int sellInt);
 }
