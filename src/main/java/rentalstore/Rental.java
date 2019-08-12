@@ -16,4 +16,11 @@ public class Rental {
     public int getDayRented() {
         return dayRented;
     }
+
+    public int getMoviePriceCode(){
+        return this.getMovie().getPriceCode();
+    }
+    public String getMovieTitle(){
+        return this.movie.getTitle();
+    }
 }
