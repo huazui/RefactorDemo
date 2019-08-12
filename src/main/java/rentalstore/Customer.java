@@ -21,43 +21,15 @@ public class Customer {
         return name;
     }
 
+
     public double getAmount(Rental rental){
-        double result = 0;
-        switch (rental.getMoviePriceCode()) {
-            case Movie.REGULAR:
-                result = getRegularAmount(rental);
-                break;
-            case Movie.NEW_RELEASE:
-                result = this.getNew_ReleaseAmount(rental);
-                break;
-            case Movie.CHILDRENS:
-                result = getChildrenAmount(rental);
-                break;
-        }
-        return result;
+        Movie movie = rental.getMovie();
+        return movie.getPrice(rental.getDayRented());
     }
 
 
 
-    public double getRegularAmount(Rental rental){
-        double  result = 2;
-        if (rental.getDayRented() > 2) {
-            result += (rental.getDayRented() - 2) * 1.5;
-        }
-        return result;
-    }
 
-    public double getChildrenAmount(Rental rental){
-        double result = 1.5;
-        if (rental.getDayRented() > 3) {
-            result += (rental.getDayRented() - 3) * 1.5;
-        }
-        return result;
-    }
-
-    public double getNew_ReleaseAmount(Rental rental){
-        return rental.getDayRented()*3;
-    }
 
     public String getButton(){
 
