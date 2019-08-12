@@ -6,6 +6,16 @@ public class GildedRose {
         this.items = items;
     }
 
+    public void updateAged(Item item){
+        if (item.quality < 50) {
+            item.quality = item.quality + 1;
+        }
+        if (item.sellIn < 0) {
+                if (item.quality < 50) {
+                    item.quality = item.quality + 1;
+                }
+        }
+    }
 
  public void updateItemQuality(Item item){
      if (!item.name.equals("Aged Brie")
@@ -67,6 +77,9 @@ public class GildedRose {
 
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
+            if(items[i].name == "Aged Brie")
+            updateAged(items[i]);
+            else
             updateItemQuality(items[i]);
 
 
