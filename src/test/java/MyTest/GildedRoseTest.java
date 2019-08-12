@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class GildedRoseTest {
 
     @Test
-    public void test1(){
+    public void shouldGetOtherWhenNameItem1(){
         Item item1 = new Item("item1",5, 40);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -19,7 +19,7 @@ public class GildedRoseTest {
 
     }
     @Test
-    public void test1_(){
+    public void shouldGetOtherWhenNameItem12(){
         Item item1 = new Item("item1",5, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -29,7 +29,7 @@ public class GildedRoseTest {
 
     }
     @Test
-    public void test1_2(){
+    public void shouldGetOtherWhenNameItem13(){
         Item item1 = new Item("item1",15, 40);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -39,7 +39,7 @@ public class GildedRoseTest {
 
     }
     @Test
-    public void test1_3(){
+    public void shouldGetOtherWhenNameItem14(){
         Item item1 = new Item("item1",-3, 40);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -49,7 +49,7 @@ public class GildedRoseTest {
 
     }
     @Test
-    public void test2(){
+    public void shouldGetOtherWhenNameItem15(){
         Item item1 = new Item("item1",-10, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -59,7 +59,7 @@ public class GildedRoseTest {
 
     }
     @Test
-    public void test3(){
+    public void testAged1(){
         Item item1 = new Item("Aged Brie",5, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -68,7 +68,7 @@ public class GildedRoseTest {
         assertEquals(70,items[0].quality);
     }
     @Test
-    public void test4(){
+    public void testAged2(){
         Item item1 = new Item("Aged Brie",5, 40);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -77,7 +77,7 @@ public class GildedRoseTest {
         assertEquals(41,items[0].quality);
     }
     @Test
-    public void test5(){
+    public void testAged3(){
         Item item1 = new Item("Aged Brie",15, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -86,7 +86,7 @@ public class GildedRoseTest {
         assertEquals(70,items[0].quality);
     }
     @Test
-    public void test6(){
+    public void testAged4(){
         Item item1 = new Item("Aged Brie",-5, 30);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -95,7 +95,7 @@ public class GildedRoseTest {
         assertEquals(32,items[0].quality);
     }
     @Test
-    public void test7(){
+    public void testAged5(){
         Item item1 = new Item("Aged Brie",-5, 60);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -105,7 +105,7 @@ public class GildedRoseTest {
     }
 
     @Test
-    public void test8(){
+    public void testBackstage1 (){
         Item item1 = new Item("Backstage passes to a TAFKAL80ETC concert",5, 40);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -114,7 +114,7 @@ public class GildedRoseTest {
         assertEquals(43,items[0].quality);
     }
     @Test
-    public void test9(){
+    public void testBackstage2 (){
         Item item1 = new Item("Backstage passes to a TAFKAL80ETC concert",15, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -123,7 +123,7 @@ public class GildedRoseTest {
         assertEquals(70,items[0].quality);
     }
     @Test
-    public void test10(){
+    public void testBackstage3 (){
         Item item1 = new Item("Backstage passes to a TAFKAL80ETC concert",-5, 30);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -132,7 +132,7 @@ public class GildedRoseTest {
         assertEquals(0,items[0].quality);
     }
     @Test
-    public void test11(){
+    public void testBackstage4 (){
         Item item1 = new Item("Backstage passes to a TAFKAL80ETC concert",-5, 60);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -141,7 +141,7 @@ public class GildedRoseTest {
         assertEquals(0,items[0].quality);
     }
     @Test
-    public void test12(){
+    public void testSulfuras1 (){
         Item item1 = new Item("Sulfuras, Hand of Ragnaros",5, 40);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -150,7 +150,7 @@ public class GildedRoseTest {
         assertEquals(40,items[0].quality);
     }
     @Test
-    public void test13(){
+    public void testSulfuras2 (){
         Item item1 = new Item("Sulfuras, Hand of Ragnaros",15, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -159,7 +159,7 @@ public class GildedRoseTest {
         assertEquals(70,items[0].quality);
     }
     @Test
-    public void test14(){
+    public void testSulfuras3 (){
         Item item1 = new Item("Sulfuras, Hand of Ragnaros",-5, 30);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -168,7 +168,7 @@ public class GildedRoseTest {
         assertEquals(30,items[0].quality);
     }
     @Test
-    public void test15(){
+    public void testSulfuras4 (){
         Item item1 = new Item("Sulfuras, Hand of Ragnaros",-5, 60);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -178,7 +178,7 @@ public class GildedRoseTest {
     }
 
     @Test
-    public void test16(){
+    public void testSulfuras5 (){
         Item item1 = new Item("Sulfuras, Hand of Ragnaros",10, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -187,7 +187,7 @@ public class GildedRoseTest {
         assertEquals(70,items[0].quality);
     }
     @Test
-    public void testfWhen0(){
+    public void testSulfurasWhen0(){
         Item item1 = new Item("Sulfuras, Hand of Ragnaros",0, 70);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -196,7 +196,7 @@ public class GildedRoseTest {
         assertEquals(70,items[0].quality);
     }
     @Test
-    public void testAWhen0(){
+    public void testAgedWhen0(){
         Item item1 = new Item("Aged Brie",0, 40);
         Item[] items = new Item[1];
         items[0]= item1;
@@ -205,7 +205,7 @@ public class GildedRoseTest {
         assertEquals(42,items[0].quality);
     }
     @Test
-    public void testBAWhen0(){
+    public void testBackstageAWhen0(){
         Item item1 = new Item("Backstage passes to a TAFKAL80ETC concert",0, 40);
         Item[] items = new Item[1];
         items[0]= item1;
