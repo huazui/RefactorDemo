@@ -186,6 +186,40 @@ public class GildedRoseTest {
         gildedRose.updateQuality();
         assertEquals(70,items[0].quality);
     }
-
-
+    @Test
+    public void testfWhen0(){
+        Item item1 = new Item("Sulfuras, Hand of Ragnaros",0, 70);
+        Item[] items = new Item[1];
+        items[0]= item1;
+        GildedRose gildedRose = new GildedRose(items);
+        gildedRose.updateQuality();
+        assertEquals(70,items[0].quality);
+    }
+    @Test
+    public void testAWhen0(){
+        Item item1 = new Item("Aged Brie",0, 40);
+        Item[] items = new Item[1];
+        items[0]= item1;
+        GildedRose gildedRose = new GildedRose(items);
+        gildedRose.updateQuality();
+        assertEquals(42,items[0].quality);
+    }
+    @Test
+    public void testBAWhen0(){
+        Item item1 = new Item("Backstage passes to a TAFKAL80ETC concert",0, 40);
+        Item[] items = new Item[1];
+        items[0]= item1;
+        GildedRose gildedRose = new GildedRose(items);
+        gildedRose.updateQuality();
+        assertEquals(0,items[0].quality);
+    }
+    @Test
+    public void testOtherAWhen0(){
+        Item item1 = new Item("Bt",0, 40);
+        Item[] items = new Item[1];
+        items[0]= item1;
+        GildedRose gildedRose = new GildedRose(items);
+        gildedRose.updateQuality();
+        assertEquals(38,items[0].quality);
+    }
 }
